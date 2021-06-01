@@ -1,3 +1,5 @@
+-- LocalScript
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local UpdateSong = ReplicatedStorage.RadioServer.UpdateSong
 
