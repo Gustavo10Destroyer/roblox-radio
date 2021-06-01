@@ -1,0 +1,7 @@
+{
+    "Duration": 179.617,
+    "SoundId": "rbxassetid://5788606997",
+    "SoundName": "Panda Eyes - Lonely Island",
+    "Thumbnail": "rbxassetid://6893278988",
+    "OnLoad": "print(\"Tocando agora: Panda Eyes - Lonely Island\")"
+}
