@@ -1,0 +1,7 @@
+{
+    "Duration": <Roblox Sound Duration>,
+    "SoundId": <Roblox Sound ID>,
+    "SoundName": <Sound Name>,
+    "Thumbnail": <Thumbnail ID>,
+    "OnLoad": <Lua Script>
+}
