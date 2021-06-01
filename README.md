@@ -7,3 +7,6 @@ Tutorial de como criar sua própria rádio:
   3. Carregue suas músicas no index.js
   4. Ligue o servidor
   5. Implemente o Cliente no seu mapa de Roblox!
+
+Entre em contato via Discord!
+https://discord.gg/Z9N7DY6uAK
