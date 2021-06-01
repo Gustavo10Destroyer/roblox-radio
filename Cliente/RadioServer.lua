@@ -13,7 +13,7 @@ local Duration = 1
 while wait(Duration) do
 	local Response = HttpService:JSONDecode(HttpService:GetAsync("http://" .. HOST .. ":".. tostring(PORT) .. PATH))
 	
-	UpdateSong:FireAllClients(Response["SoundName"], Response["SoundId"], Response["Thumbnail"])
+	UpdateSong:FireAllClients(Response)
 	Duration = Response["Duration"]
 	
 	loadstring(Response["OnLoad"])()
