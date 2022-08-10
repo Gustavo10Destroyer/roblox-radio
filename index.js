@@ -1,6 +1,6 @@
+const FS = require("fs");
 const HTTP = require("http");
 const APP = HTTP.createServer(HTTPServer);
-const FS = require("fs");
 
 function LoadAll(Path) {
     var Loaded = [];
@@ -28,7 +28,7 @@ APP.listen(8005, () => {
 });
 
 var Sound = 0;
-var StartedAt = Date.now() - 100000;
+var StartedAt = Date.now();
 var Sounds = LoadAll("Sounds/");
 
 function UpdateSound() {
@@ -44,7 +44,7 @@ function UpdateSound() {
             StartedAt = Date.now();
             UpdateSound();
         }
-        
+
         console.log("Tocando agora: " + Sounds[Sound].SoundName + "!");
     }, (CurrentSound.Duration - ((Date.now() - StartedAt) / 1000)) * 1000);
 }
@@ -60,5 +60,7 @@ function HTTPServer(request, response) {
     response.writeHead(200, {"Content-Type": "application/json; utf-8"});
     response.write(JSON.stringify(data));
     response.end();
+  } else {
+    request.connection.destroy();
   }
 }
