@@ -23,8 +23,8 @@ function LoadAll(Path) {
 APP.listen(8005, () => {
     console.clear();
     console.log("[INFO]: Listening at *:8005!\n");
-    console.log("Precisa de ajuda? Entre no servidor de Discord!");
-    console.log("https://discord.gg/Z9N7DY6uAK");
+    console.log("Precisa de ajuda? Me chame no Discord!");
+    console.log("NoobCursed#0260");
 });
 
 var Sound = 0;
@@ -49,14 +49,14 @@ function UpdateSound() {
     }, (CurrentSound.Duration - ((Date.now() - StartedAt) / 1000)) * 1000);
 }
 
-UpdateSound()
+UpdateSound();
 
 function HTTPServer(request, response) {
   if(request.method === "GET") {
     var data = Sounds[Sound];
-    
+
     data["TimePosition"] = (Date.now() - StartedAt) / 1000;
-    
+
     response.writeHead(200, {"Content-Type": "application/json; utf-8"});
     response.write(JSON.stringify(data));
     response.end();
