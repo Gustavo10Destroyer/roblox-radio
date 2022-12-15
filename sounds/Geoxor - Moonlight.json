@@ -1,0 +1,7 @@
+{
+    "Duration": 347.454,
+    "SoundId": "rbxassetid://3780888379",
+    "SoundName": "Geoxor - Moonlight",
+    "Thumbnail": "rbxassetid://6893286402",
+    "OnLoad": "print(\"Tocando agora: Geoxor - Moonlight\")"
+}

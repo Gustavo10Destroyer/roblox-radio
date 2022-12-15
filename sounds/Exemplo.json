@@ -1,0 +1,7 @@
+{
+    "Duration": 200.0,
+    "SoundId": "rbxassetid://XXXXXXXXXX",
+    "SoundName": "Nome da Música",
+    "Thumbnail": "rbxassetid://XXXXXXXXXX",
+    "OnLoad": "print(\"Tocando agora: Nome da Música | Powered By: Nome da sua Rádio\")"
+}

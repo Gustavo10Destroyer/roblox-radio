@@ -1,0 +1,7 @@
+{
+    "Duration": 182.517,
+    "SoundId": "rbxassetid://3780810795",
+    "SoundName": "Geoxor - Euphoria",
+    "Thumbnail": "rbxassetid://6893279116",
+    "OnLoad": "print(\"Tocando agora: Geoxor - Euphoria\")"
+}
